@@ -1,4 +1,4 @@
-// 1. Deƒne a structure called Players which describe details like p_name, team, score, average.
+// 1. Deƒine a structure called Players which describe details like p_name, team, score, average.
 // Write a program to read data for 3 players and print that data. (A)
 
 #include <stdio.h>
