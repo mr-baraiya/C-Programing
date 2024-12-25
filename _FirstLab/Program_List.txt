@@ -1,8 +1,8 @@
-
 1.Check whether given number is positive or negative.
 2.Find out largest number from given three numbers.
 3.Print weekday based on given number.
 4.Print 1 to N.
 5.Print sum of 1 to n numbers.
 6.Count number of even or odd number from an array of n numbers.
-7.Find maximum and minimum valueÂ fromÂ array.
+7.Find maximum and minimum value from array.
+
