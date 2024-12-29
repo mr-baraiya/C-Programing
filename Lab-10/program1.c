@@ -11,7 +11,7 @@ void main(){
 	p_int = (int *) malloc(sizeof(int));
 	p_float = (float *) malloc(sizeof(float));
 	
-	if(p_char == NULL && p_int == NULL && p_float == NULL){
+	if(p_char == NULL || p_int == NULL || p_float == NULL){
 		printf("Memmory Allocation Is Failed.\n");
 		return;
 	}

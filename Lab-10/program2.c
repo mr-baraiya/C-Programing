@@ -8,6 +8,11 @@ void main(){
 	scanf("%d",&n);
 	// Allocate Mamory
 	p = (int *) malloc(n * sizeof(int));
+	if(p == NULL){
+		printf("Memmory Allocation Is Failed.\n");
+		return;
+	}
+	
 	for(i=0;i<n;i++){
 		printf("Enter the Number in %d : ",i);
 		scanf("%d",&p[i]);
