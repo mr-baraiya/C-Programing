@@ -1,0 +1,1 @@
+4. Print contents of ƒle in reverse order.(B)

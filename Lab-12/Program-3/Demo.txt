@@ -1,0 +1,5 @@
+1. Create, open and close a	ƒile. (A)
+2. Count chars, spaces, tabs and new lines in a ƒle(A)
+3. Demonstrate functions fprintf(), fscanf(), fputc(), fgetc(), fseek() and rewind().(A)
+4. Print contents of ƒle in reverse order.(B)
+5. Capitalize ƒrst letter of each word in ƒile.(B)
