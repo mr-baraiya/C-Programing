@@ -1,36 +1,26 @@
 //4. Allocate dynamic memory for structure variable.(A)
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-struct Student {
-    char name[50];
-    int roll;
-    float marks;
+struct student{
+	char name[50];
+	int id;
 };
-int main() {
-    struct Student *s;
 
-    // Allocate memory
-    s = (struct Student *)malloc(sizeof(struct Student));
-    if (s == NULL) {
-        printf("Memory allocation failed.\n");
-        return 1;
-    }
-
-    // Assign values
-    strcpy(s->name, "Baby John");
-    s->roll = 101;
-    s->marks = 85.5;
-
-    // Print structure details
-    printf("Student Details:\n");
-    printf("Name: %s\n", s->name);
-    printf("Roll Number: %d\n", s->roll);
-    printf("Marks: %.2f\n", s->marks);
-
-    // Free memory
-    free(s);
-    return 0;
+void main(){
+	struct student *s;
+	// Allocate Memory
+	s = (struct student *) malloc(sizeof(struct student));
+	if(s == NULL){
+		printf("Memory Allocation is Failed.\n");
+		return;
+	}
+	printf("Enter the Name of Student : ");
+	gets(s->name);
+	printf("Enter the ID of Student : ");
+	scanf("%d",&s->id);
+	
+	printf("%d. %s",s->id,s->name);
+	// Free Memory
+	free(s);
 }
-

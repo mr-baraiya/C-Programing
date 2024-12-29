@@ -1,21 +1,21 @@
 //2. Calculate the sum of n numbers entered by the user using malloc().(A)
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void main(){
-	int n=0,i=0,sum=0;
+	int *p,n=0,i=0,sum=0;
 	printf("Enter the Number : ");
 	scanf("%d",&n);
-	int *ptr = (int *)malloc(n * sizeof(int));
-	if( ptr == NULL){
-		printf("Memory allocation failed.\n");
+	// Allocate Mamory
+	p = (int *) malloc(n * sizeof(int));
+	for(i=0;i<n;i++){
+		printf("Enter the Number in %d : ",i);
+		scanf("%d",&p[i]);
 	}
-	printf("Enter %d numbers:\n", n);
-    for (i = 0; i< n; i++) {
-        scanf("%d", &ptr[i]);
-        sum += ptr[i];
-    }
-	printf("Sum of numbers: %d\n", sum);
+	for(i=0;i<n;i++){
+		sum = sum + p[i];
+	}
+	printf("Sum = %d",sum);
 	// Deallocate memory
-    free(ptr); 
+	free(p);
 }
