@@ -1,4 +1,4 @@
-//2. Copy one ネe to another ナle.(A)
+//2. Copy one ナle to another ナle.(A)
 #include <stdio.h>
 void main(){
 	FILE *fp1,*fp2;

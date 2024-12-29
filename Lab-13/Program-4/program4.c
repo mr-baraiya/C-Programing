@@ -11,7 +11,7 @@ void main() {
         printf("Error opening files.\n");
         if (input) fclose(input);
         if (temp) fclose(temp);
-        return 1;
+        return;
     }
 
     do {
