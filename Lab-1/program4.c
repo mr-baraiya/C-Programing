@@ -13,12 +13,11 @@ void main(){
 
 void fbbo(int n){
 	int p1 = 0,p2 = 1,sum = 0;
-	printf("\n 0 1 ");
 	int i = 0;
-	for(i=0;i<n-2;i++){
-		sum = p1 + p2;
+	for(i=0;i<n;i++){
 		printf("%d ",sum);
 		p1 = p2;
 		p2 = sum;
+		sum = p1 + p2;
 	}
 }
