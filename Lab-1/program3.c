@@ -16,6 +16,7 @@ void main(){
 }
 
 void countSimpleInterest(int p,int r,int t){
-	float interest = (p*r*t)/100.0;
+	float interest = (p*r*t)/100.0;]
+	
 	printf("Interest = %f",interest);
 }
