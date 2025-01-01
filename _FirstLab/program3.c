@@ -5,7 +5,6 @@ void main(){
 	printf("Enter the Number : ");
 	scanf("%d",&n);
 	n = n % 7;
-	
 	switch(n){
 		case 0:
 			printf("Sunday");

@@ -18,7 +18,7 @@ void main(){
 		}
 	}
 	else{
-		if(n1>n3){
+		if(n2>n3){
 			printf("%d is Largest Number.",n2);
 		}
 		else{
