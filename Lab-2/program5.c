@@ -16,8 +16,10 @@ void number_to_words(int n) {
 	char result[1024] = "";
     // Arrays for number words
     char *ones[] = { "", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"};
-	char *teens[] = {"Ten","Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" };
-    char *tens[] = { "", "", "Twenty ", "Thirty ", "Forty ", "Fifty ", "Sixty ", "Seventy ", "Eighty ", "Ninety " };
+	char *teens[] = {"Ten","Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", 
+						"Eighteen", "Nineteen" };
+    char *tens[] = { "", "", "Twenty ", "Thirty ", "Forty ", "Fifty ", 
+					"Sixty ", "Seventy ", "Eighty ", "Ninety " };
 
     if (n == 0) {
         printf("Zero");

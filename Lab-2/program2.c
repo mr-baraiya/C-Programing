@@ -11,25 +11,18 @@ void main(){
 	scanf("%f",&n2);
 	printf("Enter the third Number : ");
 	scanf("%f",&n3);
-	float max = minOfThree(n1,n2,n3);
-	printf("Min = %.2f",max); //up to two decimal point round of
+	float min = minOfThree(n1,n2,n3);
+	printf("Min = %.2f",min); //up to two decimal point round of
 }
 
 float minOfThree(float n1,float n2,float n3){
-	if(n1 < n2){
-		if(n1 < n3){
-			return n1;
-		}
-		else{
-			return n3;
-		}
+	if(n1 <= n2 && n1 <= n3){
+		return n1;
+	}
+	else if(n2 <= n1 && n2 <= n3){
+		return n2;
 	}
 	else{
-		if(n2 < n3){
-			return n2;
-		}
-		else{
-			return n3;
-		}
+		return n3;
 	}
 }

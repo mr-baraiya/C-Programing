@@ -8,20 +8,18 @@ void main(){
 	int n1,n2;
 	printf("Enter the n1 : ");
 	scanf("%d",&n1);
+	  
 	printf("Enter the n2 : ");
 	scanf("%d",&n2);
-	//call by value
-	//can not change in Actual Parameter
+	//call by value   
+
 	swapByCallByValue(n1,n2);
-	//call by reference
-	//also change in Actual Parameter
 	swapByCallByReference(&n1,&n2);
 	printf("call by reference \n");
 	printf("n1 = %d and n2 = %d \n",n1,n2);
 }
 
 void swapByCallByValue(int n1, int n2){
-	//formal Parameter
 	int temp = n1;
 	n1 = n2;
 	n2 = temp;
