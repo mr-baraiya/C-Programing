@@ -12,7 +12,7 @@ void main(){
 	printf("Enter the third Number : ");
 	scanf("%f",&n3);
 	float max = maxOfThree(n1,n2,n3);
-	printf("Max = %f",max); //up to two decimal point round of
+	printf("Max = %.2f",max); //up to two decimal point round of
 }
 float maxOfThree(float n1,float n2,float n3){
 	if(n1 >= n2 && n1 >= n3){
