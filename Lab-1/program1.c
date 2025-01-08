@@ -17,5 +17,6 @@ void main(){
 
 //function Defination
 void addTwoNumbers(int a,int b){
-	printf("%d + %d = %d",a,b,a+b);
+	int sum = a + b;
+	printf("%d + %d = %d",a,b,sum);
 }

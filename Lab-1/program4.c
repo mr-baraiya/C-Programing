@@ -3,14 +3,12 @@
 #include <stdio.h>
 
 void fbbo(int);
-
 void main(){
 	int n;
 	printf("Enter the Number : ");
 	scanf("%d",&n);
 	fbbo(n);
 }
-
 void fbbo(int n){
 	int p1 = 0,p2 = 1,sum = 0;
 	int i = 0;

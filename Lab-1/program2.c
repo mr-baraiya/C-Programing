@@ -22,7 +22,6 @@ void max(int a,int b){
 		printf("%d is Max.\n",b);
 	}
 }
-
 void min(int a,int b){
 	if(a < b){
 		printf("%d is Min.",a);
