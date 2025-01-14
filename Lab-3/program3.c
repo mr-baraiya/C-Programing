@@ -12,7 +12,6 @@ void main (){
 	int ans = power(n,p);
 	printf("%d power %d = %d",n,p,ans);
 }
-
 int power(int n,int p){
 	if(p == 0){
 		return 1;
