@@ -1,22 +1,22 @@
 //3. Find power of any number using recursion.?(A)
 #include <stdio.h>
 
-int power(int ,int);
+int pow(int ,int);
 
 void main (){
-	int n = 0,p = 0;
+	int base = 0,power = 0;
 	printf("Enetr the number : ");
-	scanf("%d",&n);
+	scanf("%d",&base);
 	printf("Enetr the power : ");
-	scanf("%d",&p);
-	int ans = power(n,p);
-	printf("%d power %d = %d",n,p,ans);
+	scanf("%d",&power);
+	int ans = pow(base,power);
+	printf("%d power %d = %d",base,power,ans);
 }
-int power(int n,int p){
-	if(p == 0){
+int pow(int base,int power){
+	if(power == 0){
 		return 1;
 	}
 	else{
-		return n * power(n,p-1);
+		return base * pow(base,power-1);
 	}
 }

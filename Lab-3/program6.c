@@ -1,6 +1,5 @@
 //6. Find reverse of any number using recursion.?(C)
 #include<stdio.h>
-
 int reverseNumber(int ,int);
 
 void main(){
