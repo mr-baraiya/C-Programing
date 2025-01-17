@@ -14,6 +14,7 @@ void main(){
 	float max = maxOfThree(n1,n2,n3);
 	printf("Max = %.2f",max); //up to two decimal point round of
 }
+
 float maxOfThree(float n1,float n2,float n3){
 	if(n1 >= n2 && n1 >= n3){
 		return n1;
