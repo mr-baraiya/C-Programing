@@ -1,7 +1,6 @@
 //1. Find factorial of a number using function and recursive function. (A)
 #include <stdio.h>
 int factorial(int);
-
 void main(){
 	int n=0;
 	printf("Enter the Number : ");
@@ -9,7 +8,6 @@ void main(){
 	int ans = factorial(n);
 	printf("The Factorial Of %d is = %d",n,ans);
 }
-
 int factorial(int n){
 	if(n == 0){
 		return 1;
