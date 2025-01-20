@@ -8,18 +8,13 @@ struct book{
 	char publication[30];
 	float price;
 };
-
 void main(){
 	struct book b[3];
 	int i=0;
-	
 	//get value from User
 	for(i=0;i<3;i++){
 		printf("\n");
 		printf("Enter the Title of Book : ");
-		if (i!=0){
-			gets(b[i].title);
-		}
 		gets(b[i].title);
 		printf("Enter the Author Name : ");
 		gets(b[i].author);
@@ -27,8 +22,8 @@ void main(){
 		gets(b[i].publication);
 		printf("Enter the Price : ");
 		scanf("%f",&b[i].price);
+		getchar();
 	}
-	
 	//Display Structure
 	for(i=0;i<3;i++){
 		printf("\n");
