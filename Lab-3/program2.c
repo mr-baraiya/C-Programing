@@ -4,14 +4,20 @@
 void printArray(int [],int);
 
 void main(){
-	int size = 7;
-	int arr[7] = {12,34,56,32,12,67,89};
+	int size = 0;
+	printf("Enter the size : ");
+	scanf("%d",&size);
+	int arr[size];
+	int i=0;
+	for(i=0;i<size;i++){
+		scanf("%d",&arr[i]);
+	}
 	printArray(arr,size);
 }
 
 void printArray(int arr[],int size){
 	int i = 0;
-	for(i=0;i<=size;i++){
+	for(i=0;i<size;i++){
 		printf("%d ",arr[i]);
 	}
 }

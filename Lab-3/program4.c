@@ -1,15 +1,13 @@
 //4. Scan a character string passed as an argument and convert all lowercase string to uppercase string.?(B)
 #include <stdio.h>
-#include <string.h>
-
+//#include <string.h>
 void converLowerToUpper(char []);
-
 void main(){
 	char str[50] = " ";
 	printf("Enter the String : ");
 	gets(str);
-	converLowerToUpper(str);
 	printf("%s",str);
+	converLowerToUpper(str);
 }
 void converLowerToUpper(char str[]){
 	//printf("%s",strupr(str));
@@ -19,4 +17,5 @@ void converLowerToUpper(char str[]){
 			str[i] = str[i] - 32;
 		}
 	}
+	printf("%s",str);
 }

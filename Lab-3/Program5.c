@@ -1,7 +1,7 @@
 //5. Swap elements of two integer arrays using user deƒine function.?(B)
 #include <stdio.h>
 
-void swapArr(int *,int *,int);
+void swapArr(int [],int [],int);
 
 void main(){
 	int size = 10;
