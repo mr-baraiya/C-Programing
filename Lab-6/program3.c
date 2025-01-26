@@ -18,9 +18,9 @@ void main(){
 	int i=0;
 	//Get Details of Players
 	for(i=0;i<n;i++){
+		getchar();
 		printf("Enter the Details Of Player : %d\n",(i+1));
 		printf("Enter the Player Name : ",(i+1));
-		gets(p[i].p_name);
 		gets(p[i].p_name);
 		printf("Enter the Team Name : ",(i+1));
 		gets(p[i].team);

@@ -18,9 +18,6 @@ void main(){
 	for(i=0;i<n;i++){
 		printf("Enter the Details Of Player : %d\n",(i+1));
 		printf("Enter the Player Name : ",(i+1));
-		if(i!=0){
-			gets(p[i].p_name);
-		}
 		gets(p[i].p_name);
 		printf("Enter the Team Name : ",(i+1));
 		gets(p[i].team);
@@ -28,20 +25,15 @@ void main(){
 		scanf("%d",&p[i].score);
 		printf("Enter the Average : ",(i+1));
 		scanf("%f",&p[i].average);
+		getchar();
 	}
 	
 	//print Student Details
 	for(i=0;i<n;i++){
-		printPlayerDetails(p[i]);
+		printf("Player Name : %s \n",p[i].p_name);
+		printf("Team Name : %s \n",p[i].team);
+		printf("Score : %d \n",p[i].score);
+		printf("Average : %f \n",p[i].average);
+		printf("\n");
 	}
 }
-
-void printPlayerDetails(struct Player p){
-	printf("\n");
-	printf("Player Name : %s \n",p.p_name);
-	printf("Team Name : %s \n",p.team);
-	printf("Score : %d \n",p.score);
-	printf("Average : %f \n",p.average);
-	printf("\n");
-}
-
