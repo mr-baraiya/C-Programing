@@ -17,8 +17,8 @@ void main(){
 	//get Details Of Students
 	int i=0;
 	for(i=0;i<n;i++){
+		getchar();
 		printf("\nEnter the Student%d Name : ",(i+1));
-		gets(s[i].name);
 		gets(s[i].name);
 		printf("Enter the Student%d Percentages : ",(i+1));
 		scanf("%f",&s[i].percentage);

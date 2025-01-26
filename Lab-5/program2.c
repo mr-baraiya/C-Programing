@@ -17,26 +17,23 @@ void main(){
 	//get Details Of Students
 	int i=0;
 	for(i=0;i<n;i++){
+		getchar();
 		printf("\nEnter the Student%d Name : ",(i+1));
-		gets(s[i].name);
 		gets(s[i].name);
 		printf("Enter the Student%d Percentages : ",(i+1));
 		scanf("%f",&s[i].percentage);
 		printf("Enter the Student%d Age : ",(i+1));
 		scanf("%d",&s[i].age);
 	}
-	//Calculate The Max_Percentage
-	float Max_Percentage = 0;
+	//Find The Max Index 
+	int max_Index = 0;
 	for(i=0;i<n;i++){
-		if(Max_Percentage < s[i].percentage){
-			Max_Percentage = s[i].percentage;
+		if(s[max_Index].percentage < s[i].percentage){
+			max_Index = i;
 		}
 	}
-	//Display The Details Of Student
-	for(i=0;i<n;i++){
-		printf("\nStudent Name : %s \n",s[i].name);
-		printf("Student Percentage : %f \n",s[i].percentage);
-		printf("Maximum Percentage : %f \n",Max_Percentage);
-		printf("Student Age : %d \n",s[i].age);
-	}
+	//Display The Details Of Student which have Max Percentage
+	printf("\nStudent Name : %s \n",s[max_Index].name);
+	printf("Student Percentage : %f \n",s[max_Index].percentage);
+	printf("Student Age : %d \n",s[max_Index].age);
 }
