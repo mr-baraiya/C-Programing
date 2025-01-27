@@ -17,7 +17,7 @@ void main(){
 	printf("Enter the id Of Employee : ");
 	scanf("%d",&e2.id);
 	printf("Enter the Name Of Employee : ");
-	gets(e2.name);
+	getchar();
 	gets(e2.name);
 	printf("Enter the Post Of Employee : ");
 	gets(e2.post);
