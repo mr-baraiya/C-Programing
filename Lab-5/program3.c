@@ -7,7 +7,6 @@ struct Student{
 	float percentage;
 	int age;
 };
-
 void main(){
 	int n=0;
 	printf("Enter the Size Of Student Array : ");
