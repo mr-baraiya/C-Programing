@@ -28,7 +28,7 @@ void main(){
 	//Find The Max Index 
 	int max_Index = 0;
 	for(i=0;i<n;i++){
-		if(s[max_Index].percentage < s[i].percentage){
+		if(s[i].percentage > s[max_Index].percentage ){
 			max_Index = i;
 		}
 	}
