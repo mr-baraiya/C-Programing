@@ -11,18 +11,19 @@ void main(){
 	int n=0;
 	printf("Enter the Size Of Student Array : ");
 	scanf("%d",&n);
+	getchar();
 	struct Student s[n];
 	
 	//get Details Of Students
 	int i=0;
 	for(i=0;i<n;i++){
-		getchar();
 		printf("\nEnter the Student%d Name : ",(i+1));
 		gets(s[i].name);
 		printf("Enter the Student%d Percentages : ",(i+1));
 		scanf("%f",&s[i].percentage);
 		printf("Enter the Student%d Age : ",(i+1));
 		scanf("%d",&s[i].age);
+		getchar();
 	}
 	//Sort The Array According to Name Alphabetically Order
 	int j=0;

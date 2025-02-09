@@ -6,8 +6,9 @@ void main(){
 	scanf("%d",&n1);
 	printf("Enter the Second Number : ");
 	scanf("%d",&n2);
-	int *p1,*p2;
-	p1 = &n1;
-	p2 = &n2;
+	
+	int *p1 = &n1;
+	int *p2 = &n2;
+	
 	printf("%d + %d = %d",*p1,*p2,(*p1 + *p2));
 }

@@ -1,16 +1,13 @@
 //1. Create structure student with name, percentage and age. Read data of 5 students using 
 //array of structure. (A)
 #include <stdio.h>
-
 struct Student{
 	char name[30];
 	float percentage;
 	int age;
 };
-
 void main(){
 	struct Student s[5];
-	
 	//get Details Of Students
 	int i=0;
 	for(i=0;i<5;i++){
@@ -22,7 +19,6 @@ void main(){
 		scanf("%d",&s[i].age);
 		getchar();
 	}
-	
 	//Display The Details Of Student
 	for(i=0;i<5;i++){
 		printf("\nStudent Name : %s \n",s[i].name);
