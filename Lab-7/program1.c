@@ -4,8 +4,12 @@ void main(){
 	int a = 0;
 	printf("Enter the Number : ");
 	scanf("%d",&a);
+	
+	printf("\nAddress of a = %d",&a);
+	printf("\nValue of a = %d",a);
+	
 	//Declare a Pointer
 	int *p = &a;
-	printf("Address of a = %d",p);
+	printf("\nAddress of a = %d",p);
 	printf("\nValue of a = %d",*p);
 }
