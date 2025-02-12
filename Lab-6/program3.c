@@ -20,13 +20,13 @@ void main(){
 	for(i=0;i<n;i++){
 		getchar();
 		printf("Enter the Details Of Player : %d\n",(i+1));
-		printf("Enter the Player Name : ",(i+1));
+		printf("Enter the Player Name : ");
 		gets(p[i].p_name);
-		printf("Enter the Team Name : ",(i+1));
+		printf("Enter the Team Name : ");
 		gets(p[i].team);
-		printf("Enter the Score : ",(i+1));
+		printf("Enter the Score : ");
 		scanf("%d",&p[i].score);
-		printf("Enter the Average : ",(i+1));
+		printf("Enter the Average : ");
 		scanf("%f",&p[i].average);
 	}
 	//Sort The Array According to Name Alphabetically Order
