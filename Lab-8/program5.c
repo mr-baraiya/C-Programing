@@ -9,24 +9,16 @@ void main(){
 		printf("Enter the value at Index %d :",i);
 		scanf("%d",&arr[i]);
 	}
-	//Sort Array By Selection Sort
-	int *ptr = arr;
-	int minIdx = 0,temp = 0;
+	int *ptr = arr , temp = 0;
 	for(i=0;i<n-1;i++){
-		minIdx = i;
 		for(j=i+1;j<n;j++){
-			if(*(ptr+j) < *(ptr+minIdx)){
-				minIdx = j;
+			if(*(ptr+i) > *(ptr+j)){
+				temp = *(ptr+i);
+				*(ptr+i) = *(ptr+j);
+				*(ptr+j) = temp;
 			}
 		}
-		//swap the number
-		if(minIdx != i){
-			temp = *(ptr+i);
-			*(ptr+i) = *(ptr+minIdx);
-			*(ptr+minIdx) = temp;
-		}
 	}
-	
 	//Print Array
 	printf("\nArray : \n");
 	for(i=0;i<n;i++){

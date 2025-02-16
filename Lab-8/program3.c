@@ -13,14 +13,14 @@ void main(){
 	//Print Even Numbers
 	printf("\nEven Numbers : \n");
 	for(i=0;i<n;i++){
-		if( *(ptr+i)%2 == 0){
+		if( *(ptr+i) % 2 == 0){
 			printf("%d ",*(ptr+i));
 		}
 	}
 	//Print Odd Numbers
 	printf("\nOdd Numbers : \n");
 	for(i=0;i<n;i++){
-		if( *(ptr+i)%2 != 0){
+		if( *(ptr+i) % 2 != 0){
 			printf("%d ",*(ptr+i));
 		}
 	}

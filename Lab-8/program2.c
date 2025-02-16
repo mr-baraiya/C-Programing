@@ -11,6 +11,8 @@ void main(){
 	}
 	
 	//Print Array
+	//arr[i] = *(ptr + i)
+	
 	printf("\nArray : \n");
 	int *ptr = arr;
 	for(i=0;i<n;i++){
