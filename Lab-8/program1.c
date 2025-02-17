@@ -8,6 +8,7 @@ void main(){
 	scanf("%d",&n2);
 	int *ptr1 = &n1;
 	int *ptr2 = &n2;
+	
 	int temp = *ptr1;
 	*ptr1 = *ptr2;
 	*ptr2 = temp;
