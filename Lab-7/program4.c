@@ -11,12 +11,15 @@ void main(){
 	}
 	
 	int arr2[n];
-	int *ptr1 = &arr1;
+	int *ptr1 = arr1;
 	int *ptr2 = arr2;
+	
+	// arr[i] = *(ptr + i)
 	
 	for(i=0;i<n;i++){
 		*(arr2+i) = *(arr1+i);
 	}
+	
 	printf("\nCopy of Array1 : ");
 	for(i=0;i<n;i++){
 		printf("%d  ",arr2[i]);
