@@ -10,5 +10,7 @@ void main(){
 	int *p1 = &n1;
 	int *p2 = &n2;
 	
+	//printf("%d + %d = %d",n1,n2,(n1 + n2));
+	
 	printf("%d + %d = %d",*p1,*p2,(*p1 + *p2));
 }
