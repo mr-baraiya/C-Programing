@@ -17,7 +17,7 @@ void main(){
 	// arr[i] = *(ptr + i)
 	
 	for(i=0;i<n;i++){
-		*(arr2+i) = *(arr1+i);
+		*(ptr2 + i) = *(ptr1 + i);
 	}
 	
 	printf("\nCopy of Array1 : ");
