@@ -21,7 +21,7 @@ void main(){
 		scanf("%d",(p+i));
 	}
 	for(i=0;i<n;i++){
-		sum = sum + p[i]);
+		sum = sum + *(p+i);
 	}
 	printf("Sum = %d",sum);
 	// Deallocate memory
