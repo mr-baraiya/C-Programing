@@ -20,7 +20,6 @@ void main(){
 		printf("Enter the Number at index %d :",i);
 		scanf("%d",&arr2[i]);
 	}
-	
 	//swap using pointer
 	int *ptr1 = arr1;
 	int *ptr2 = arr2;
