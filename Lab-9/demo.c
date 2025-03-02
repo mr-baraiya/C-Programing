@@ -13,16 +13,8 @@ void main(){
 	int sum [m][n];
 	int *p1 = &arr1;
 	int *p2 = arr2;
-	int *p3 = &sum;
+	//int *p3 = &sum;
 	
-//	printf("Pointer address: %d",p1);
-	printf("Without n:\n");
-	for(i=0;i<m;i++){
-		for(j=0;j<n;j++){
-			printf("%d\t",(p1+i+j));
-		}
-		printf("\n");
-	}	
 
 	printf("\n\nWith n:\n");
 	for(i=0;i<m;i++){
@@ -31,7 +23,7 @@ void main(){
 		}
 		printf("\n");
 	}	
-	
+}
 	
 //	for(i=0;i<m;i++){
 //		for(j=0;j<n;j++){
@@ -44,7 +36,5 @@ void main(){
 //			printf("%d\t",*(p1+i*n+j));
 //		}
 //		printf("\n");
-//	}
-	
-	
-}
+//	}	
+//}
