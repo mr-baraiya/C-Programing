@@ -17,12 +17,14 @@ void main(){
 	// arr[i] = *(ptr + i)
 	
 	for(i=0;i<n;i++){
+		//arr2[i]=arr1[i];
 		*(ptr2 + i) = *(ptr1 + i);
 	}
 	
-	printf("\nCopy of Array1 : ");
+	printf("\nCopy of Array2 : ");
 	for(i=0;i<n;i++){
 		printf("%d  ",arr2[i]);
+		//printf("%d",*(ptr2+i));
 	}
 }
 
