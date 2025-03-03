@@ -30,7 +30,6 @@ void main(){
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
 			//sum[i][j] = arr1[i][j] + arr2[i][j];
-			
 			*(p2+j) += *(p1+i*n+j);
 		}
 	}
