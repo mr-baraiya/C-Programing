@@ -9,13 +9,12 @@ void main(){
 		printf("Enter the value at Index %d :",i);
 		scanf("%d",&arr[i]);
 	}
-	
 	//Print Array
 	//arr[i] = *(ptr + i)
-	
 	printf("\nArray : \n");
 	int *ptr = arr;
 	for(i=0;i<n;i++){
 		printf("%d ",*(ptr+i));
+		//printf("%d",arr[i]);
 	}
 }
