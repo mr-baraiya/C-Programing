@@ -45,25 +45,6 @@ void main(){
 		}
 	}
 	
-	//print the Matrices
-	printf("Matrix 1 : \n");
-	for(i=0;i<m;i++){
-		for(j=0;j<n;j++){
-			//printf("%d ",arr1[i][j]);
-			printf("%d ",*(p1+i*n+j));
-		}
-		printf("\n");
-	}
-	
-	printf("Matrix 2 : \n");
-	for(i=0;i<m;i++){
-		for(j=0;j<n;j++){
-			//printf("%d ",arr2[i][j]);
-			printf("%d ",*(p2+i*n+j));
-		}
-		printf("\n");
-	}
-	
 	printf("Sum : \n");
 	for(i=0;i<m;i++){
 		for(j=0;j<n;j++){
