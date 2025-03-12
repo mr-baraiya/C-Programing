@@ -5,12 +5,12 @@ void main(){
 	printf("Enter the string : ");
 	gets(str);
 	char *p = str;
-	printf("length of \'%s\' ",str);
+	
 	//find the length
 	int length = 0;
 	while (*p != '\0'){
 		length++;
 		p++;
 	}
-	printf("is = %d",length);
+	printf("length = %d",length);
 }
