@@ -1,4 +1,4 @@
-//1. Create, open and close a ƒle. (A)
+//1. Create, open and close a ƒile. (A)
 #include <stdio.h>
 
 void main(){
