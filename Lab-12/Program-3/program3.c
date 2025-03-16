@@ -26,7 +26,11 @@ void main(){
     printf("Character: %c\n",c);
     fclose(f);
 
-	//fseek()
+//	fseek()
+//	#define SEEK_CUR 1
+//	#define SEEK_END 2
+//	#define SEEK_SET 0
+
     f = fopen("Demo.txt","r");
     fseek(f,4,SEEK_SET);
     c=fgetc(f);
