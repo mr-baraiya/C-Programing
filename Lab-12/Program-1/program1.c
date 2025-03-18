@@ -9,7 +9,7 @@ void main(){
 		printf("File Can not be Open.");
 		return;
 	}
-	printf("'Demo.txt' is Successfully Created.\n");
+	printf("Demo.txt' is Successfully Created.\n");
 	
 	char s[100] ="I am a Student At Darshan University - Rajkot.";
 	fprintf(f,"%s",s);
