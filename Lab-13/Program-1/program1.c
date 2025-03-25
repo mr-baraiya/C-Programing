@@ -6,9 +6,18 @@ void main(){
 	//Open the Both File 
 	fp1 = fopen("Demo.txt","r");
 	fp2 = fopen("Temp.txt","a");
+	if (fp1 == NULL || fp2 == NULL) {
+        perror("File Can not be Open.");
+        return;
+    }
 	do{
-		ch = getc(fp1);
-		putc(ch,fp2);
+		ch = fgetc(fp1);
+		if (ch == EOF){
+        	break;	
+		}
+        else {
+        	fputc(ch,fp2);
+		}
 	}while(ch != EOF);
 	//Close The Both File
 	fclose(fp1);

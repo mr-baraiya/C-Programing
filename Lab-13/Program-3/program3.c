@@ -3,40 +3,36 @@
 
 void main() {
     FILE *file1, *file2, *output;
-    int ch;
-    int newline_count;
 
     // Open the files
     file1 = fopen("file1.txt", "r");
     file2 = fopen("file2.txt", "r");
     output = fopen("output.txt", "w");
+	
+	if (file1 == NULL || file2 == NULL || output == NULL) {
+        perror("File Can not be Open.");
+        return;
+    }
+	
+	char line[1000];
+    while (1) {
+    	
+		//  fgets(str, MaxCount, File_Pointer);
+		//  fputs(str, File_Pointer);
+		
+        if (fgets(line, sizeof(line), file1) != NULL) {
+            fputs(line, output);
+        }
 
-    // Alternate between file1 and file2
-    do {
-        newline_count = 0;
+        if (fgets(line, sizeof(line), file2) != NULL) {
+            fputs(line, output);
+        }
 
-        // Read one line from file1
-        do {
-        	ch = getc(file1);
-        	if (ch == '\n') {
-                newline_count++;
-                break;
-            }
-            putc(ch, output);
-        } while(ch != EOF);
-		putc('\n', output);
-        // Read one line from file2
-        do {
-        	ch = getc(file2);
-        	if (ch == '\n') {
-                newline_count++;
-                break;
-            }
-            putc(ch, output);
-        } while(ch != EOF);
-        putc('\n', output);
-    }while(ch != EOF);
-
+        if (feof(file1) && feof(file2)) {
+            break;
+        }
+    }
+    
     // Close the files
     fclose(file1);
     fclose(file2);
