@@ -7,7 +7,7 @@ void main(){
 	fp1 = fopen("Demo.txt","r");
 	fp2 = fopen("Temp.txt","a");
 	if (fp1 == NULL || fp2 == NULL) {
-        perror("File Can not be Open.");
+        printf("File Can not be Open.");
         return;
     }
 	do{

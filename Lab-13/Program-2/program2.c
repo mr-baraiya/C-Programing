@@ -7,7 +7,7 @@ void main(){
 	fp2 = fopen("DemoCopy.txt","w");
 	
 	if (fp1 == NULL || fp2 == NULL) {
-        perror("File Can not be Open.");
+        printf("File Can not be Open.");
         return;
     }
     
