@@ -1,1 +1,1 @@
-4. Print contents of ƒle in reverse order.(B)
+4. Print contents of File in reverse order.(B)

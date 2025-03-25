@@ -8,9 +8,9 @@ void main(){
 		return;
 	}
 	char c;
-	int count_char=0,count_space=0,count_tabs=0,count_line=0;
+	int count_char=0,count_space=0,count_tabs=0,count_line=1;
 	do{
-		c = getc(f);
+		c = fgetc(f);
 		count_char++;
 		if(c == ' '){
 			count_space++;
