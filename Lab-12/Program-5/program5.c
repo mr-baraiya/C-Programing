@@ -7,7 +7,7 @@ void main() {
     FILE *f2 = fopen("Capatilize.txt", "w");
 
     if (f1 == NULL || f2 == NULL) {
-        perror("File Can not be Open.");
+        printf("File Can not be Open.");
         return;
     }
 

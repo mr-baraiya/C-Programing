@@ -1,1 +1,1 @@
-Capitalize first letter of each word in file.
+capitalize first letter of each word in file.
