@@ -17,7 +17,7 @@ void main(){
     
 	//fputc()
     f = fopen("Demo2.txt","w");
-    fputc('x',f);
+    fputc('a',f);
     fclose(f);
     
 	//fgetc()
@@ -31,14 +31,14 @@ void main(){
 //	#define SEEK_END 2
 //	#define SEEK_SET 0
 
-    f = fopen("Demo.txt","r");
+    f = fopen("Demo1.txt","r");
     fseek(f,4,SEEK_SET);
     c=fgetc(f);
-    printf("Character: %c\n",c);
+    printf("4th Character: %c\n",c);
 
     //rewind() = fseek(fp, 0, SEEK_SET);
     rewind(f);
     c = fgetc(f);
-    printf("Character: %c\n",c);
+    printf("1st Character: %c\n",c);
     fclose(f);
 }

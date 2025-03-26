@@ -10,8 +10,7 @@ void main(){
 		return;
 	}
 	printf("Demo.txt is Successfully Created.\n");
-	
-	char s[100] = "I am a Student At Darshan University - Rajkot.";
+	char s[100] = "I am a Student Of Darshan University.\n		Rajkot.";
 	fprintf(f,"%s",s);
 	printf("Successfully Write in 'Demo.txt' .");
 	// close The file

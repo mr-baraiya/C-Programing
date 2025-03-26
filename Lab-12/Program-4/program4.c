@@ -9,10 +9,8 @@ void main(){
     	printf("File Can not be Open.");
 		return;
 	}
-	
     fseek(f,0,SEEK_END);
     length = ftell(f);
-    
     for (i=length-1;i>=0;i--)
     {
         fseek(f,i,SEEK_SET);

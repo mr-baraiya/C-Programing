@@ -8,7 +8,7 @@ void main(){
 		return;
 	}
 	char c;
-	int count_char=0,count_space=0,count_tabs=0,count_line=1;
+	int count_char=0,count_space=0,count_tabs=0,count_lines=1;
 	do{
 		c = fgetc(f);
 		count_char++;
@@ -19,12 +19,12 @@ void main(){
 			count_tabs++;
 		}
 		if(c == '\n'){
-			count_line++;
+			count_lines++;
 		}
 	}while(c != EOF);
 	printf("Character count: %d\n",count_char);
     printf("Space count: %d\n",count_space);
     printf("Tabs count: %d\n",count_tabs);
-    printf("Line count: %d\n",count_line);
+    printf("Line count: %d\n",count_lines);
 	fclose(f);
 }
