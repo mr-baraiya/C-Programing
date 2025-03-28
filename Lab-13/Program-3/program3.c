@@ -10,7 +10,7 @@ void main() {
     output = fopen("output.txt", "w");
 	
 	if (file1 == NULL || file2 == NULL || output == NULL) {
-        perror("File Can not be Open.");
+        printf("File Can not be Open.");
         return;
     }
 	
