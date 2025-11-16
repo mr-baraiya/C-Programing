@@ -14,3 +14,15 @@ void rotate(int* nums, int numsSize, int k) {
         nums[i] = temp[i];
     }
 }
+void main() {
+    int nums[] = {1, 2, 3, 4, 5, 6, 7};
+    int k = 3;
+    int numsSize = sizeof(nums) / sizeof(nums[0]);
+
+    rotate(nums, numsSize, k);
+
+    printf("Rotated array: ");
+    for (int i = 0; i < numsSize; i++) {
+        printf("%d ", nums[i]);
+    }
+}
