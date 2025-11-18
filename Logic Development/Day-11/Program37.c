@@ -1,3 +1,4 @@
+// WAP to multiply two matrices with error checking for dimension compatibility. 
 #include <stdio.h>
 
 void main() {
