@@ -2,37 +2,30 @@
 // an algorithm that runs in O(n) time and uses constant extra space.  
 // Input: nums = [1,2,0] Output: 3 
 #include <stdio.h>
-void swap(int* a, int* b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
+
 int firstMissingPositive(int* nums, int numsSize) {
-    for (int i = 0; i < numsSize; i++) {
-        while (nums[i] > 0 && nums[i] <= numsSize && nums[nums[i] - 1] != nums[i]) {
-            swap(&nums[i], &nums[nums[i] - 1]);
+    int i = 0;
+    while (i < numsSize) {
+        int correctPos = nums[i] - 1;
+        if (nums[i] > 0 && nums[i] <= numsSize && nums[i] != nums[correctPos]) {
+            int temp = nums[i];
+            nums[i] = nums[correctPos];
+            nums[correctPos] = temp;
+        } else {
+            i++;
         }
     }
-    
-    for (int i = 0; i < numsSize; i++) {
-        if (nums[i] != i + 1) {
+
+    for (i = 0; i < numsSize; i++) {
+        if (nums[i] != i + 1)
             return i + 1;
-        }
     }
-    
     return numsSize + 1;
 }
-void main() {
-    int n;
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-    
-    int nums[n];
-    printf("Enter the elements: ");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &nums[i]);
-    }
-    
-    int missing = firstMissingPositive(nums, n);
-    printf("The smallest missing positive integer is: %d\n", missing);
+
+int main() {
+    int nums[] = {1,2, 3,4,5,7};
+    int size = sizeof(nums) / sizeof(nums[0]);
+    printf("Smallest Missing Positive: %d\n", firstMissingPositive(nums, size));
+    return 0;
 }
